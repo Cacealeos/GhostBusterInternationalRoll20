@@ -1,0 +1,267 @@
+:root {
+	--mainthemecolor:  #EA180B;
+}
+
+input:not([value='Personnel File']) ~ .PersonnelFile,
+input:not([value='Ghost File']) ~ .GhostFile {
+	display: none;
+}
+
+.PersonnelFile {
+	margin-left: 5%;
+	margin-right: 5%;
+	color: var(--mainthemecolor);
+	font-size: 1.5rem;
+}
+
+.logo {
+	width: 35%;
+	height: 6em; 
+	display: block;
+	background: red;
+	float: right;
+	margin-right: 35%;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+.pagebreaker {
+	width: 75%;
+	height: .25em;
+	background: var(--mainthemecolor);
+	display: block;
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-bottom: 2%;
+}
+
+.charInput {
+	border-radius: 0%;
+	border-top: .2em;
+	border-left: .2em;
+	border-right: .2em;
+	padding: 0%;
+	border-color: var(--mainthemecolor);
+	width: 100%;
+	display: block;
+	outline: none;
+	background: none;
+}
+
+.rollInput {
+	border: none;
+	padding: 0%;
+	border-color: var(--mainthemecolor);
+	width: 8%;
+	display: block;
+	outline: none;
+	background: none;
+}
+
+.pfLargeCol {
+	overflow: hidden;
+	width: 50%;
+	margin-right: 5%;
+	display: inline;
+}
+
+.pfRow {
+
+	width: 45em;
+	display: flex;
+}
+
+.pfileHeader {
+	width: 100%;
+	display: flex;
+}
+
+.pfPhoto {
+	width: 20%;
+	margin-right: 5%;
+}
+.photobox {
+	height: 9em; 
+	border-style: solid;
+	border-color: var(--mainthemecolor);
+	border-width: .2em;
+	width: 100%;
+	display: block;
+	background: lightseagreen;
+}
+
+.pfDescription {
+	width: 75%;
+	overflow: hidden;
+}
+
+.pfInfoCol {
+	overflow: hidden;
+	width: 50%;
+}
+
+.pfInfo {
+	width: 100%;
+	display: flex;
+	
+}
+
+.pfbody {
+	width: 100%;
+	display: flex;
+}
+
+.pfRollCol {
+	width: 45%;
+	overflow: hidden;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.pfBodyCol {
+	width: 20%;
+	overflow: hidden;
+	margin-right: 5%;
+}
+
+.lastColumn {
+	width: 25%;
+	margin-right: 0%;
+}
+
+.smalltext {
+	font-size: small;
+}
+
+.medBtn {
+	border: none;
+	padding: 0%;
+	width: 3%;
+	display: block;
+	outline: none;
+	background: none;
+}
+
+.pffooter {
+	width: 100%;
+	display: flex;
+}
+
+.footerInput {
+	border: none;
+	padding: 0%;
+	width: 10%;
+	display: block;
+	outline: none;
+	background: none;
+}
+
+.footerSpan {
+	border: solid;
+	border-width: .1em;
+	border-top: .1em;
+	border-left: .1em;
+	border-right: .1em;
+	padding: 0%;
+	border-color: var(--mainthemecolor);
+	width: 100%;
+	display: flex;
+	outline: none;
+	background: none;
+}
+
+.footerGearRow, .footerCol {
+	width: 100%;
+	display: flex;
+}
+
+.pfGear {
+	width: 25%;
+	margin-right: 5%;
+}
+
+.gearbox {
+	height: 16em; 
+	border-style: solid;
+	border-color: var(--mainthemecolor);
+	border-width: .2em;
+	width: 100%;
+	display: block;
+	background: lightseagreen;
+}
+
+.footerGearContainer {
+	width: 40%;
+	display: flex;
+	margin-right: 5%;
+	overflow: hidden;
+}
+
+.footerGearColLeft {
+	width: 70%;
+	overflow: hidden;
+	margin-right: 5%;
+}
+
+.footerGearColRight {
+	width: 25%;
+}
+
+.gearInput {
+	border-radius: 0%;
+	border-top: .2em;
+	border-left: .2em;
+	border-right: .2em;
+	padding: 0%;
+	border-color: red;
+	width: 25%;
+	display: block;
+	outline: none;
+	background: none;
+}
+
+.finalgearInput {
+	border-radius: 0%;
+	border-top: .2em;
+	border-left: .2em;
+	border-right: .2em;
+	padding: 0%;
+	border-color: red;
+	width: 75%;
+	display: block;
+	outline: none;
+	background: none;
+}
+
+.footerTableContainer {
+	width: 25%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+th, td {
+            padding: 3px;
+            text-align: center;
+        }
+
+.footerTable {
+
+}
+
+.tableBtn {
+	outline: none;
+	border: none;
+	padding: 0%;
+	background: none;
+}
+
+.rightFooterCaption {
+	float: right;
+	margin-right: 5%;
+}
+
+.pfkey {
+	font-size: x-small;
+}
+

@@ -1,0 +1,394 @@
+
+<input type='hidden' name='attr_filetype' />
+
+<div class="PersonnelFile">
+    
+    <select name="attr_filetype" value="Personnel File" >
+        <option value="Personnel File" selected>Personnel File</option>
+        <option value="Ghost File">Ghost File</option>
+    </select>
+    <div class="logo" ></div>
+    <div class='pfileHeader'>
+        <div class="pfLargeCol">
+            <div class='pfRow'>
+                Name:<input type="text" name="attr_name" class="charInput"><br>
+            </div>
+            <div class='pfRow'>
+                Residence:<input type="text" name="attr_residence1" class="charInput"><br>
+            </div>
+            <div class='pfRow'>
+                <input type="text" name="attr_residence2" class="charInput"><br>
+            </div>
+        </div>
+        <div class="pfLargeCol">
+            <div class='pfRow'>
+                Alias:<input type="text" name="attr_alias" class="charInput"><br>
+            </div>
+            <div class='pfRow'>
+                Phone:<input type="text" name="attr_phone" class="charInput"><br>
+            </div>
+            <div class='pfRow'>
+                Telex:<input type="text" name="attr_telex" class="charInput"><br>
+            </div>
+        </div>
+    </div>
+    <div class='pagebreaker'></div>
+    <div class='pfileHeader'>
+        <div class='pfPhoto'>
+            <b>PHOTO HERE</b>
+            <div class='photobox'></div>
+        </div>
+        <div class='pfDescription'>
+            <b>DESCRIPTION</b>
+            <div class="pfInfo">
+                <div class="pfInfoCol" style="margin-right: 5%;">
+                    <div class='pfRow'>
+                        Sex:<input type="text" name="attr_sex" class="charInput"><br>
+                    </div>
+                    <div class='pfRow'>
+                        Hair Color:<input type="text" name="attr_hcolor" class="charInput" style="width: 45%;"><br>
+                    </div>
+                    <div class='pfRow'>
+                        Height:<input type="text" name="attr_height" class="charInput"><br>
+                    </div>
+                </div>
+                <div class="pfInfoCol">
+                    <div class='pfRow'>
+                        Age:<input type="text" name="attr_age" class="charInput"><br>
+                    </div>
+                    <div class='pfRow'>
+                        Eye Color:<input type="text" name="attr_ecolor" class="charInput" style="width: 45%;"><br>
+                    </div>
+                    <div class='pfRow'>
+                        Weight:<input type="text" name="attr_weight" class="charInput"><br>
+                    </div>
+                </div>
+            </div>
+            <div class="pfRow">
+                Goals:<input type="text" name="attr_goals" class="charInput"><br>
+            </div>
+            <div class="pfRow">
+                Tags:<input type="text" name="attr_tags1" class="charInput"><br>
+            </div>
+            <div class="pfRow">
+                <input type="text" name="attr_tags2" class="charInput"><br>
+            </div>
+            <div class="pfRow">
+                <input type="text" name="attr_tags3" class="charInput"><br>
+            </div>
+        </div>
+    </div>
+    <div class='pagebreaker'></div>
+    <div class='pfbody'>
+        <div class="pfBodyCol">
+            <b>TRAITS</b><br>
+            <br>
+            <span>Brains</span><br>
+            <span>Muscles</span><br>
+            <span>Moves</span><br>
+            <span>Cool</span><br>
+            <input type="text" name="attr_traits" class="charInput">
+        </div>
+        <div class="pfBodyCol" style="text-align: center;">
+            <b>ROLL</b>
+            <br>
+            <div  style="display: flex">
+                <div class="pfRollCol">
+                    <b>Normal</b>
+                    <br>
+                    <div class='pfRow'>(<input type="text" name="attr_brains_norm" class="rollInput">)</div>
+                    <div class='pfRow'>(<input type="text" name="attr_muscles_norm" class="rollInput">)</div>
+                    <div class='pfRow'>(<input type="text" name="attr_moves_norm" class="rollInput">)</div>
+                    <div class='pfRow'>(<input type="text" name="attr_cool_norm" class="rollInput">)</div>
+                    <div class='pfRow'><input type="text" name="attr_roll_norm" class="charInput"></div>
+                </div>
+                <div class="pfRollCol">
+                    <b>Current</b>
+                    <br>
+                    <div class='pfRow'>(<input type="text" name="attr_brains_cur" class="rollInput">)</div>
+                    <div class='pfRow'>(<input type="text" name="attr_muscles_cur" class="rollInput">)</div>
+                    <div class='pfRow'>(<input type="text" name="attr_moves_cur" class="rollInput">)</div>
+                    <div class='pfRow'>(<input type="text" name="attr_cool_cur" class="rollInput">)</div>
+                    <div class='pfRow'><input type="text" name="attr_roll_cur" class="charInput"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pfBodyCol" style="width: 25%;">
+            <b>TALENTS</b><br>
+            <br>
+            <div class='pfRow'><input type="text" name="attr_braintalent" class="charInput"></div>
+            <div class='pfRow'><input type="text" name="attr_musclestalent" class="charInput"></div>
+            <div class='pfRow'><input type="text" name="attr_movestalent" class="charInput"></div>
+            <div class='pfRow'><input type="text" name="attr_cooltalent" class="charInput"></div>
+            <div class='pfRow'><input type="text" name="attr_talenttext" class="charInput"></div>
+        </div>
+        <div class="pfBodyCol lastColumn" style="width: 15%; margin-left: 5%;">
+            <b>ROLL</b><br>
+            <br>
+            <div class='pfRow'><input type="text" name="attr_brainroll" class="charInput"></div>
+            <div class='pfRow'><input type="text" name="attr_musclesroll" class="charInput"></div>
+            <div class='pfRow'><input type="text" name="attr_movesroll" class="charInput"></div>
+            <div class='pfRow'><input type="text" name="attr_coolroll" class="charInput"></div>
+            <div class='pfRow'><input type="text" name="attr_rolltext" class="charInput"></div>
+        </div>
+    </div>
+    <div class='pagebreaker'></div>
+    <div style="text-align: center;">
+        <b>MEDICAL HISTORY</b>
+    </div>
+    <div class='pfbody'>
+        <div class="pfBodyCol" >
+            <b>Current Status:</b>
+            <div class='pfRow'>
+                <input type="hidden" name="attr_unhurtstatus" value="(     )">
+                <button type="action" name='act_unhurt' class='medBtn'><span name='attr_unhurtstatus'></span></button>Unhurt
+            </div>
+            <div class='pfRow'>
+                <input type="hidden" name="attr_bangedstatus" value="( )">
+                <button type="action" name='act_banged' class='medBtn'><span name='attr_bangedstatus'></span></button>Banged Up Some
+            </div>
+            <div class='pfRow'>
+                <input type="hidden" name="attr_hurtstatus" value="( )">
+                <button type="action" name='act_hurt' class='medBtn'><span name='attr_hurtstatus'></span></button>Hurt
+            </div>
+            <div class='pfRow'>
+                <input type="hidden" name="attr_reallyhurtstatus" value="( )">
+                <button type="action" name='act_reallyhurt' class='medBtn'><span name='attr_reallyhurtstatus'></span></button>Really Hurt
+            </div>
+        </div>
+        <div class="pfBodyCol">
+            <b>Effect:</b>
+            <div class='pfRow'>
+                None
+            </div>
+            <div class='pfRow'>
+                -1 from a Trait
+            </div>
+            <div class='pfRow'>
+                -2 from total Traits
+            </div>
+            <div class='pfRow'>
+                -3 from total Traits
+            </div>
+        </div>
+        <div class="pfBodyCol">
+            <b>Current Status:</b>
+            <div class='pfRow'>
+                <input type="hidden" name="attr_trashedstatus" value="( )">
+                <button type="action" name='act_trashed' class='medBtn'><span name='attr_trashedstatus'></span></button>Trashed
+            </div>
+            <div class='pfRow'>
+                <input type="hidden" name="attr_basketstatus" value="( )">
+                <button type="action" name='act_basket' class='medBtn'><span name='attr_basketstatus'></span></button>Basket Case
+            </div>
+            <div class='pfRow'>
+                <input type="hidden" name="attr_nearlystatus" value="( )">
+                <button type="action" name='act_nearly' class='medBtn'><span name='attr_nearlystatus'></span></button>Nearly Dead
+            </div>
+        </div>
+        <div class="pfBodyCol lastColumn">
+            <b>Effect:</b>
+            <div class='pfRow smalltext'>
+                -4 from total Traits
+            </div>
+            <div class='pfRow smalltext'>
+                -5 from total Traits; Out Cold
+            </div>
+            <div class='pfRow smalltext'>
+                -6 from total Traits; Out Cold
+            </div>
+            <div class='pfRow smalltext'>
+                Out Cold, Hospitalized
+            </div>
+        </div>
+    </div>
+    <div class='pagebreaker'></div>
+    <div class='pffooter'>
+        <div class='pfGear'>
+            <b>GEAR</b>
+            <div class='gearbox'></div>
+        </div>
+        <div class='footerGearContainer'>
+            <div class='footerCol' >
+                <!-- <b class='rightFooterCaption'>BROWNIE POINTS</b> -->
+                <div class="footerGearColLeft">
+                    <div class='pfRow'>
+                        <span class="footerSpan">HEAD:<input type="text" name="attr_head1" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan"><input type="text" name="attr_head2" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                       <span class="footerSpan"> BACK:<input type="text" name="attr_back1" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan"><input type="text" name="attr_back2" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan"><input type="text" name="attr_back3" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan"><input type="text" name="attr_back4" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan">BELT:<input type="text" name="attr_belt1" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan"><input type="text" name="attr_belt2" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan"><input type="text" name="attr_belt3" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan"><input type="text" name="attr_belt4" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan">HANDS:<input type="text" name="attr_hands1" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan"><input type="text" name="attr_hands2" class="footerInput"></span>
+                    </div>
+                    <div class='pfRow'>
+                        <span class="footerSpan">TOTAL:<input type="text" name="attr_total" class="footerInput"></span>
+                    </div>
+                </div>
+                <div class="footerGearColRight">
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='gearInput'>/H
+                        <input type="text" name="" class='gearInput'>/M
+                    </div>
+                    <div class="footerGearRow">
+                        <input type="text" name="" class='finalgearInput'>/M
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='footerTableContainer'>
+            <table class="footerTable">
+                <tr>
+                    <td>40</td>
+                    <td>39</td>
+                    <td>38</td>
+                    <td>37</td>
+                    <td>36</td>
+                    <td>35</td>
+                    <td>34</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>31</td>
+                    <td>30</td>
+                    <td>29</td>
+                    <td>28</td>
+                    <td>27</td>
+                    <td>26</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>23</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>20</td>
+                    <td>19</td>
+                    <td>18</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>14</td>
+                    <td>13</td>
+                    <td>12</td>
+                    <td>11</td>
+                    <td>10</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <button class='tableBtn'>0</button>
+        </div>
+    </div>
+    <br>
+    <div class='pfkey'>
+        <b>
+            1 x Muscles: OK. 1 x Muscles < Gear < 2 x Muscles: -1 Moves + Cool. 2 x Muscles < Gear < 3 x Muscles: Drag at Moves 1. Gear > 3 x Muscles: No Can Do.
+        </b>
+    </div>
+</div>
+    
+<div class="GhostFile">
+    <select name="attr_filetype" value="Personnel File" >
+            <option value="Personnel File">Personnel File</option>
+            <option value="Ghost File">Ghost File</option>
+    </select>
+    GHOST FILE PLACE HOLDER...
+    //#EA180B
+</div>
+<rolltemplate class="sheet-rolltemplate-defense">
+    <div class="template-container-defense">
+        <div class="template-header-defense">{{computed::Name}}</div>
+        <div class="template-chart-defense">
+            <span class='template-span-defense'>Cost: {{computed::Cost}}</span>
+        </div>
+        <div class="template-row-defenseflavor">
+            <span class='template-span-defense'>{{computed::Info}}</span>
+        </div>
+    </div>
+</rolltemplate>
+
+
+<script type="text/worker">
+
+
+</script>
