@@ -7,22 +7,36 @@ input:not([value='Ghost File']) ~ .GhostFile {
 	display: none;
 }
 
+.App {
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/background.png');
+	width: 100%;
+
+}
+
+.fileDD {
+	outline: none;
+	background: none;
+	border: none;
+	color: var(--mainthemecolor);
+	font-weight: bold;
+	font-size: 20px;
+}
+
 .PersonnelFile {
 	margin-left: 5%;
 	margin-right: 5%;
 	color: var(--mainthemecolor);
 	font-size: 1.5rem;
+
 }
 
 .logo {
-	width: 35%;
-	height: 6em; 
+	width: 50%;
+	height: 9em; 
 	display: block;
-	background: red;
-	float: right;
-	margin-right: 35%;
-	margin-bottom: 5%;
-	margin-top: 5%;
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/GhostBuster-removebg-preview.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .pagebreaker {
