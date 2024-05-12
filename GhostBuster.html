@@ -38,7 +38,18 @@
         <div class='pfileHeader'>
             <div class='pfPhoto'>
                 <b>PHOTO HERE</b>
-                <div class='photobox'></div>
+                <input type="hidden" name="attr_avatar" value="Venkman">
+                <div class='photobox'>
+                    <div class='photoheader'>
+                        <button class='backarrow' name='act_barrw' type="action">
+                            <div class='barrowbox'></div>
+                        </button>
+                        <span name='attr_avatar'></span>
+                        <button class='forarrow' name='act_farrw' type="action">
+                            <div class='farrowbox'></div>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class='pfDescription'>
                 <b>DESCRIPTION</b>
@@ -378,7 +389,7 @@
     <div class="GhostFile">
         <select name="attr_filetype" value="Personnel File" >
                 <option value="Personnel File">Personnel File</option>
-                <option value="Ghost File">Ghost File</option>
+                <option value="Ghost File">Entity File</option>
         </select>
         GHOST FILE PLACE HOLDER...
         //#EA180B

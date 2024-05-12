@@ -101,7 +101,42 @@ input:not([value='Ghost File']) ~ .GhostFile {
 	border-width: .2em;
 	width: 100%;
 	display: block;
-	background: lightseagreen;
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/VenkmanPic.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.photoheader {
+	background: black;
+	opacity: .2;
+	text-align: center;
+}
+
+.photoheader ~ span {
+	color: white;
+}
+
+.forarrow, .backarrow {
+	outline: none;
+	border: none;
+	overflow: hidden;
+
+}
+
+.farrowbox {
+	width: 100%;
+	display: block;
+	background: var(--mainthemecolor);
+	transform: rotate(90deg);
+	left: 50%;
+}
+
+.barrowbox {
+	width: 100%;
+	display: block;
+	background: var(--mainthemecolor);
+	transform: rotate(90deg);
+	right: 50%;
 }
 
 .pfDescription {
