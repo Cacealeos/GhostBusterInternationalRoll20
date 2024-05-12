@@ -62,6 +62,10 @@ input:not([value='Ghost File']) ~ .GhostFile {
 	background: none;
 }
 
+.charInputBtn {
+	padding: 0%;
+}
+
 .rollInput {
 	border: none;
 	padding: 0%;
@@ -101,42 +105,60 @@ input:not([value='Ghost File']) ~ .GhostFile {
 	border-width: .2em;
 	width: 100%;
 	display: block;
-	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/VenkmanPic.png');
+/*	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/VenkmanPic.png');*/
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 100% 100%;
+}
+
+.photobox:hover > .photoheader{
+	opacity: 1;
+}
+
+input[value='Venkman'] + .photobox {
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/VenkmanPic.png');
+}
+
+input[value='Dana'] + .photobox {
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/DanaPic.png');
+}
+
+input[value='Egon'] + .photobox {
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/EgonPic.png');
+}
+
+input[value='Janine'] + .photobox {
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/JaninePic.png');
+}
+
+input[value='Ray'] + .photobox {
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/RayPic.png');
+}
+
+input[value='Winston'] + .photobox {
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/WinstonPic.png');
+}
+
+input[value='Louis'] + .photobox {
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/LouisPic.png');
 }
 
 .photoheader {
 	background: black;
-	opacity: .2;
+	opacity: 0;
 	text-align: center;
 }
 
 .photoheader ~ span {
-	color: white;
+	color: var(--mainthemecolor);
+	opacity: 0;
 }
 
 .forarrow, .backarrow {
 	outline: none;
 	border: none;
+	background: none;
 	overflow: hidden;
-
-}
-
-.farrowbox {
-	width: 100%;
-	display: block;
-	background: var(--mainthemecolor);
-	transform: rotate(90deg);
-	left: 50%;
-}
-
-.barrowbox {
-	width: 100%;
-	display: block;
-	background: var(--mainthemecolor);
-	transform: rotate(90deg);
-	right: 50%;
+	font-family: 'Pictos'
 }
 
 .pfDescription {
@@ -183,12 +205,12 @@ input:not([value='Ghost File']) ~ .GhostFile {
 }
 
 .medBtn {
-	border: none;
+	/*border: none;
 	padding: 0%;
 	width: 3%;
 	display: block;
 	outline: none;
-	background: none;
+	background: none;*/
 }
 
 .pffooter {
@@ -237,7 +259,9 @@ input:not([value='Ghost File']) ~ .GhostFile {
 	border-width: .2em;
 	width: 100%;
 	display: block;
-	background: lightseagreen;
+	background-image: url('https://raw.githubusercontent.com/Cacealeos/GhostBusterInternationalRoll20/master/icons/gear.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .footerGearContainer {

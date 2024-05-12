@@ -1,5 +1,5 @@
 <div class='App'>
-    <input type='hidden' name='attr_filetype' />
+    <input type='hidden' name='attr_filetype' value='Personnel File'/>
 
     <div class="PersonnelFile">
         <br>
@@ -42,11 +42,11 @@
                 <div class='photobox'>
                     <div class='photoheader'>
                         <button class='backarrow' name='act_barrw' type="action">
-                            <div class='barrowbox'></div>
+                            [
                         </button>
                         <span name='attr_avatar'></span>
                         <button class='forarrow' name='act_farrw' type="action">
-                            <div class='farrowbox'></div>
+                            ]
                         </button>
                     </div>
                 </div>
@@ -138,10 +138,10 @@
             <div class="pfBodyCol lastColumn" style="width: 15%; margin-left: 5%;">
                 <b>ROLL</b><br>
                 <br>
-                <div class='pfRow'><input type="text" name="attr_brainroll" class="charInput"></div>
-                <div class='pfRow'><input type="text" name="attr_musclesroll" class="charInput"></div>
-                <div class='pfRow'><input type="text" name="attr_movesroll" class="charInput"></div>
-                <div class='pfRow'><input type="text" name="attr_coolroll" class="charInput"></div>
+                <div class='pfRow'><button type="roll" name="attr_brainroll" class="charInputBtn"></button></div>
+                <div class='pfRow'><button type="roll" name="attr_musclesroll" class="charInputBtn"></button></div>
+                <div class='pfRow'><button type="roll" name="attr_movesroll" class="charInputBtn"></button></div>
+                <div class='pfRow'><button type="roll" name="attr_coolroll" class="charInputBtn"></button></div>
                 <div class='pfRow'><input type="text" name="attr_rolltext" class="charInput"></div>
             </div>
         </div>
@@ -153,20 +153,20 @@
             <div class="pfBodyCol" >
                 <b>Current Status:</b>
                 <div class='pfRow'>
-                    <input type="hidden" name="attr_unhurtstatus" value="(     )">
-                    <button type="action" name='act_unhurt' class='medBtn'><span name='attr_unhurtstatus'></span></button>Unhurt
+                    <input type="hidden" name="attr_unhurtstatus" value="">
+                    <input type="checkbox" name='act_unhurt' class='medBtn'><span name='attr_unhurtstatus'></span></input>Unhurt
                 </div>
                 <div class='pfRow'>
-                    <input type="hidden" name="attr_bangedstatus" value="( )">
-                    <button type="action" name='act_banged' class='medBtn'><span name='attr_bangedstatus'></span></button>Banged Up Some
+                    <input type="hidden" name="attr_bangedstatus" value="">
+                    <input type="checkbox" name='act_banged' class='medBtn'><span name='attr_bangedstatus'></span></input>Banged Up Some
                 </div>
                 <div class='pfRow'>
-                    <input type="hidden" name="attr_hurtstatus" value="( )">
-                    <button type="action" name='act_hurt' class='medBtn'><span name='attr_hurtstatus'></span></button>Hurt
+                    <input type="hidden" name="attr_hurtstatus" value="">
+                    <input type="checkbox" name='act_hurt' class='medBtn'><span name='attr_hurtstatus'></span></input>Hurt
                 </div>
                 <div class='pfRow'>
-                    <input type="hidden" name="attr_reallyhurtstatus" value="( )">
-                    <button type="action" name='act_reallyhurt' class='medBtn'><span name='attr_reallyhurtstatus'></span></button>Really Hurt
+                    <input type="hidden" name="attr_reallyhurtstatus" value="">
+                    <input type="checkbox" name='act_reallyhurt' class='medBtn'><span name='attr_reallyhurtstatus'></span></input>Really Hurt
                 </div>
             </div>
             <div class="pfBodyCol">
@@ -187,16 +187,16 @@
             <div class="pfBodyCol">
                 <b>Current Status:</b>
                 <div class='pfRow'>
-                    <input type="hidden" name="attr_trashedstatus" value="( )">
-                    <button type="action" name='act_trashed' class='medBtn'><span name='attr_trashedstatus'></span></button>Trashed
+                    <input type="hidden" name="attr_trashedstatus" value="">
+                    <input type="checkbox" name='act_trashed' class='medBtn'><span name='attr_trashedstatus'></span></input>Trashed
                 </div>
                 <div class='pfRow'>
-                    <input type="hidden" name="attr_basketstatus" value="( )">
-                    <button type="action" name='act_basket' class='medBtn'><span name='attr_basketstatus'></span></button>Basket Case
+                    <input type="hidden" name="attr_basketstatus" value="">
+                    <input type="checkbox" name='act_basket' class='medBtn'><span name='attr_basketstatus'></span></input>Basket Case
                 </div>
                 <div class='pfRow'>
-                    <input type="hidden" name="attr_nearlystatus" value="( )">
-                    <button type="action" name='act_nearly' class='medBtn'><span name='attr_nearlystatus'></span></button>Nearly Dead
+                    <input type="hidden" name="attr_nearlystatus" value="">
+                    <input type="checkbox" name='act_nearly' class='medBtn'><span name='attr_nearlystatus'></span></input>Nearly Dead
                 </div>
             </div>
             <div class="pfBodyCol lastColumn">
@@ -395,14 +395,14 @@
         //#EA180B
     </div>
 </div>
-<rolltemplate class="sheet-rolltemplate-defense">
-    <div class="template-container-defense">
-        <div class="template-header-defense">{{computed::Name}}</div>
-        <div class="template-chart-defense">
-            <span class='template-span-defense'>Cost: {{computed::Cost}}</span>
+<rolltemplate class="sheet-rolltemplate-sample">
+    <div class="template-container-sample">
+        <div class="template-header-sample">{{computed::Name}}</div>
+        <div class="template-chart-sample">
+            <span class='template-span-sample'>Cost: {{computed::Cost}}</span>
         </div>
-        <div class="template-row-defenseflavor">
-            <span class='template-span-defense'>{{computed::Info}}</span>
+        <div class="template-row-sampleflavor">
+            <span class='template-span-sample'>{{computed::Info}}</span>
         </div>
     </div>
 </rolltemplate>
@@ -416,6 +416,43 @@ for (let i = 0; i <= browniepoints; i++) {
             bpoint: i
         });
   })
-} 
+}
+const icons = ['Venkman','Dana','Egon','Ray','Winston','Janine','Louis']
+on(`clicked:farrw`, function() {
+        getAttrs(['avatar'], v => {
+        setAttrs({
+          avatar: icons[Avatar(v.avatar, "forward")]
+        });
+    });
+});
 
+on(`clicked:barrw`, function() {
+        getAttrs(['avatar'], v => {
+        setAttrs({
+          avatar: icons[Avatar(v.avatar, "backward")]
+        });
+    });
+});
+
+Avatar=function(avatar, direction) {
+
+        if(direction === "backward")
+    {
+        if(icons.indexOf(avatar) == 0)
+        return icons.length - 1
+      else
+        return icons.indexOf(avatar) - 1
+    }
+    
+    if(direction === "forward")
+    {
+        if(icons.indexOf(avatar) == icons.length-1)
+        return 0
+      else
+        return icons.indexOf(avatar) + 1
+    }
+    
+    return
+  
+}
 </script>
