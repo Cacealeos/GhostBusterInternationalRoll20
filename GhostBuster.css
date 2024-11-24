@@ -22,7 +22,7 @@ input:not([value='Ghost File']) ~ .GhostFile {
 	font-size: 20px;
 }
 
-.PersonnelFile {
+.PersonnelFile, .GhostFile {
 	margin-left: 5%;
 	margin-right: 5%;
 	color: var(--mainthemecolor);
@@ -392,3 +392,15 @@ input[value='40'] + .tableBtn40 {
     background-color: var(--mainthemecolor);
     color: white;
 }
+
+.entityfooter {
+	width: 100%;
+	display: flex;
+}
+
+.entitytyping > * {
+	margin: 3%;
+
+}
+
+
